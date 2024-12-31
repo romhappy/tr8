@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appui pour les écrits professionnels</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 2rem;
+    border-bottom: 2px solid #e9ecef;
+    }
+
+    .accordion-button {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .accordion-button::after {
+      background-color: transparent;
+    }
+    .accordion-item {
+      border: none;
+    }
+    .accordion-item h2 {
+      display: flex;
+      align-items: center;
+    }
+    .accordion-item h2 .number {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      color: white;
+      font-weight: bold;
+    }
+    .accordion-item:nth-child(1) .number { background-color: #e3b8f0; }
+    .accordion-item:nth-child(2) .number { background-color: #aee6d8; }
+    .accordion-item:nth-child(3) .number { background-color: #c8d7f5; }
+    .accordion-item:nth-child(4) .number { background-color: #fef2cc; }
+    .accordion-item:nth-child(5) .number { background-color: #f5c1c1; }
+    .accordion-item:nth-child(6) .number { background-color: #fbd9c5; }
+    .accordion-item:nth-child(7) .number { background-color: #c3e6df; }
+    .accordion-item:nth-child(8) .number { background-color: #d3c6f2; }
+    footer {
+      background-color: #f8f9fa;
+      border-top: 2px solid #e9ecef;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .logo_header{
+        height:150px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="img/logo.PNG.png" alt="Logo" class="logo_header">
+    <h1>Appui pour les écrits professionnels</h1>
+    <p class="lead">Des outils pour rédiger efficacement vos écrits professionnels en médico-social</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <div class="accordion" id="accordionExample">
+      
+      <!-- Transmissions -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading1">
+          <span class="number">1</span>
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+            Transmissions
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Structure :</strong></p>
+            <ul>
+              <li>Datation de la transmission (avec précision de l'heure si nécessaire)</li>
+              <li>Décrire factuellement une situation</li>
+              <li>Indiquer le contexte de la situation tout en restant sur les faits</li>
+              <li>Indiquer si des professionnels ont déjà été sensibilisés à cette transmission de façon orale</li>
+              <li>Indiquer le cas échéant si des mesures ont d'ores et déjà été mises en place</li>
+              <li>Signe la transmission</li>
+            </ul>
+            <p><strong>Tips :</strong> Utiliser le canevas "Qui? Quoi? Où? Quand? Comment? Par qui?"</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Synthèse -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <span class="number">2</span>
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+            Synthèse
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Structure :</strong></p>
+            <ul>
+              <li>Anamnèse : situation familiale, géographique, scolarité, formation, emploi, historique médical et du handicap (respect du secret)</li>
+              <li>Parcours au sein de l'institution : dates d'admission, services et accompagnements</li>
+              <li>Production des bilans pluridisciplinaires sous forme de paragraphes distincts</li>
+              <li>Résumé pluridisciplinaire de l'évolution</li>
+              <li>Conclusion</li>
+            </ul>
+            <p><strong>Tips :</strong> La synthèse est souvent utilisée comme support lors des réunions pluridisciplinaires pour rédiger le projet personnalisé.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet personnalisé -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading3">
+          <span class="number">3</span>
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+            Projet personnalisé
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Structure :</strong></p>
+            <ul>
+              <li>Bilan depuis l'admission ou depuis le dernier projet personnalisé</li>
+              <li>Recueil des attentes (personne accompagnée, proches, responsable désigné)</li>
+              <li>Analyse des besoins (vue des professionnels et propositions d'accompagnement)</li>
+            </ul>
+            
+            <p><strong>Tableau Projectif :</strong></p>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Objectifs</th>
+                  <th scope="col">Moyens</th>
+                  <th scope="col">Évaluation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Objectif 1</td>
+                  <td>Moyen 1<br>
+                    Moyen 2
+                  </td>
+                  <td>Évaluation 1</td>
+                </tr>
+                <tr>
+                  <td>Objectif 2</td>
+                  <td>Moyen 1 <br>
+                    Moyen 2<br>
+                    Moyen 3
+                  </td>
+                  <td>Évaluation 2</td>
+                </tr>
+                <tr>
+                  <td>Objectif 3</td>
+                  <td>Moyen 3</td>
+                  <td>Évaluation 3</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p><strong>Tips :</strong> Le projet personnalisé peut être adapté pour être plus accessible, en utilisant notamment le FALC (Facile À Lire et à Comprendre).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compte rendu -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading4">
+          <span class="number">4</span>
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+            Compte rendu
+          </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Structure :</strong></p>
+            <ul>
+              <li>Date et lieu</li>
+              <li>Personnes présentes</li>
+              <li>Ordre du jour</li>
+              <li>Résumé des prises de parole (sujet 1/intervenants/conclusion, sujet 2/intervenants/conclusion...)</li>
+            </ul>
+            <p><strong>Tips :</strong> Il existe de nombreuses situations en médico-social nécessitant un compte rendu, par exemple lors des réunions d'équipe hebdomadaires ou d'autres instances comme le conseil de la vie sociale.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Note sociale -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading5">
+          <span class="number">5</span>
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+            Note sociale
+          </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Structure :</strong></p>
+            <ul>
+              <li>Contexte de l'accueil (date d'admission, urgence, parcours précédent)</li>
+              <li>Présentation de l'accompagnement proposé en fonction des spécificités du service</li>
+              <li>Évolution de la personne accompagnée</li>
+              <li>Conclusion (propositions de renouvellement, orientation, adaptation de l'accompagnement)</li>
+            </ul>
+            <p><strong>Tips :</strong> La note sociale est souvent destinée aux partenaires extérieurs et les aide à réfléchir aux accompagnements futurs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Événements indésirables -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading6">
+          <span class="number">6</span>
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+            Événements indésirables
+          </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Structure :</strong></p>
+            <ul>
+              <li>Informations sur le déclarant et la personne exposée</li>
+              <li>Circonstances de l'événement (date, lieu, faits, conséquences)</li>
+              <li>Conséquences constatées sur les professionnels, la structure</li>
+              <li>Mesures prises pour la personne concernée</li>
+              <li>Information transmise à d'autres acteurs (proches, mandataires judiciaires)</li>
+            </ul>
+            <p><strong>Tips :</strong> Les événements indésirables sont traités au niveau institutionnel et transmis aux autorités compétentes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Information préoccupante -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading7">
+          <span class="number">7</span>
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+            Information préoccupante
+          </button>
+        </h2>
+        <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Structure :</strong></p>
+            <ul>
+              <li>Identification du récepteur et de l'émetteur de l'information</li>
+              <li>Identification des personnes concernées : enfants, adolescents, détenteurs de l'autorité parentale</li>
+              <li>Éléments jugés préoccupants ayant mené à la remontée d'informations</li>
+              <li>Informations complémentaires avant évaluation</li>
+              <li>Suites données</li>
+            </ul>
+            <p><strong>Tips :</strong> Pour btenir plus d'informations à ce sujet voici le <a href="https://www.service-public.fr/particuliers/vosdroits/F781">lien officiel</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Appui pour les écrits professionnels</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
