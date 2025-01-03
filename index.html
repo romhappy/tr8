@@ -66,6 +66,21 @@
     .logo_header{
         height:320px;
     }
+
+    @media (max-width: 768px) {
+      .logo_header {
+        width: 200px;  /* Réduit la taille du logo sur les petits écrans */
+        height: auto;
+      }
+    }
+    
+    /* Si vous voulez encore plus petit sur des écrans très mobiles (petits smartphones) */
+    @media (max-width: 480px) {
+      .logo_header {
+        width: 150px;  /* Réduit encore plus la taille sur les très petits écrans */
+        height: auto;
+      }
+    }
   </style>
 </head>
 <body>
