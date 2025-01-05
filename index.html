@@ -67,6 +67,9 @@
         height:320px;
     }
 
+    section{
+      margin-bottom: 25px;
+    }
     @media (max-width: 768px) {
       .logo_header {
         width: 200px;  /* Réduit la taille du logo sur les petits écrans */
@@ -325,13 +328,128 @@
         <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
           <div class="accordion-body">
             <p><strong>Structure de l'écrit :</strong></p>
-            <ul>
-              <li>Identification du récepteur et de l'émetteur de l'information</li>
-              <li>Identification des personnes concernées : enfants, adolescents, détenteurs de l'autorité parentale</li>
-              <li>Éléments jugés préoccupants ayant mené à la remontée d'informations</li>
-              <li>Informations complémentaires avant évaluation</li>
-              <li>Suites données</li>
-            </ul>
+            <section>
+              <p><strong>Identification de l'auteur de l'information préoccupante</strong></p>
+              <label for="nom-prenom">Nom et prénom :</label>
+              <div class="ligne"></div>
+              
+              <label for="fonction">Fonction :</label>
+              <div class="ligne"></div>
+              
+              <label for="telephone">Numéro de téléphone :</label>
+              <div class="ligne"></div>
+              
+              <label for="email">Adresse électronique :</label>
+              <div class="ligne"></div>
+              
+              <label for="ecole">École/Établissement et commune :</label>
+              <div class="ligne"></div>
+              
+              <label for="telephone-joignable">Téléphone où le signalant est joignable :</label>
+              <div class="ligne"></div>
+          </section>
+
+          <section>
+              <p><strong>Identification du ou des mineur(s) concerné(s)</strong></p>
+              <label for="mineur-nom-prenom">Nom et prénom :</label>
+              <div class="ligne"></div>
+              
+              <label for="date-naissance">Date et lieu de naissance :</label>
+              <div class="ligne"></div>
+              
+              <label for="adresse">Adresse précise :</label>
+              <div class="ligne"></div>
+              
+              <label for="telephone-mineur">Téléphone :</label>
+              <div class="ligne"></div>
+              
+              <label for="classe">Classe :</label>
+              <div class="ligne"></div>
+              
+              <label for="residence">En cas de séparation : lieu de résidence de l'enfant :</label>
+              <div class="ligne"></div>
+          </section>
+
+          <section>
+              <p><strong>Identification des parents ou des responsables légaux</strong></p>
+              <label for="parent-nom-prenom">Nom et prénom de chaque parent/responsable légal :</label>
+              <div class="ligne"></div>
+              
+              <label for="lien-parenté">Lien de parenté avec l'enfant :</label>
+              <div class="ligne"></div>
+              
+              <label for="adresse-parent">Adresse précise :</label>
+              <div class="ligne"></div>
+              
+              <label for="telephone-parent">Téléphone :</label>
+              <div class="ligne"></div>
+          </section>
+
+          <section>
+              <p><strong>Nature du danger constaté</strong></p>
+              <label for="type-danger">Type de danger :</label>
+              <div class="ligne"></div>
+              
+              <label for="domaines-affectes">Domaines affectés :(Violences psychologiques, Violences physiques, Négligences lourdes et conditions pouvant compromettre 
+                sa santé/sa sécurité/sa moralité/son éducation/ses conditions de vie)
+                </label>
+              <div class="ligne"></div>
+          </section>
+
+          <section>
+              <p><strong>Éléments justifiant l'information préoccupante</strong></p>
+              <label for="circonstances">Circonstances :</label>
+              <div class="ligne"></div>
+              
+              <label for="description-faits">Description détaillée des faits :</label>
+              <div class="ligne longue"></div>
+              
+              <label for="difficultes">Difficultés repérées :</label>
+              <div class="ligne longue"></div>
+              
+              <label for="propositions">Propositions élaborées avec la famille :</label>
+              <div class="ligne longue"></div>
+              
+          </section>
+
+          <section>
+              <p><strong>Antécédents et suivi</strong></p>
+              <label for="procedures-suivi">Procédures en cours ou mesures de suivi :</label>
+              <div class="ligne"></div>
+              
+              <label for="interventions-anterieures">Informations sur d'éventuelles interventions antérieures :</label>
+              <div class="ligne"></div>
+          </section>
+
+          <section>
+              <p><strong>Information aux parents</strong></p>
+              <label for="information-aux-parents">Mention de l'information donnée aux parents :</label>
+              <div class="ligne longue"></div>
+              
+              <label for="absence-information">Si non, justification de l'absence d'information aux parents :</label>
+              <div class="ligne longue"></div>
+          </section>
+
+          <section>
+              <p><strong>Personnes ayant participé à la concertation</strong></p>
+              <label for="coordonnees-professionnels">Coordonnées des professionnels impliqués :</label>
+              <div class="ligne longue"></div>
+          </section>
+
+          <section>
+              <p><strong>Éléments complémentaires</strong></p>
+              <label for="observations">Observations supplémentaires pour la compréhension de la situation :</label>
+              <div class="ligne longue"></div>
+          </section>
+
+          <section>
+              <p><strong>Validation et transmission</strong></p>
+              <label for="date-signature">Date et signature de l'auteur :</label>
+              <div class="ligne"></div>
+              
+              <label for="destinataires">Mention des destinataires :</label>
+              <div class="ligne"></div>
+          </section>
             <p><strong>Tips :</strong> Pour obtenir plus d'informations à ce sujet voici le <a href="https://www.service-public.fr/particuliers/vosdroits/F781">lien officiel</a></p>
           </div>
         </div>
