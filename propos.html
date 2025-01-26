@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appui pour les écrits professionnels</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+        background-color: #f8f9fa;
+        color: #333;
+        border-bottom: 2px solid #e9ecef;
+      }
+
+      .accordion-button {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #333;
+      }
+      .accordion-button::after {
+        background-color: transparent;
+      }
+      .accordion-item {
+        border: none;
+      }
+      .accordion-item h2 {
+        display: flex;
+        align-items: center;
+      }
+      .accordion-item h2 .number {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        color: white;
+        font-weight: bold;
+      }
+      .accordion-item:nth-child(1) .number {
+        background-color: #e3b8f0;
+      }
+      .accordion-item:nth-child(2) .number {
+        background-color: #aee6d8;
+      }
+      .accordion-item:nth-child(3) .number {
+        background-color: #c8d7f5;
+      }
+      .accordion-item:nth-child(4) .number {
+        background-color: #fef2cc;
+      }
+      .accordion-item:nth-child(5) .number {
+        background-color: #f5c1c1;
+      }
+      .accordion-item:nth-child(6) .number {
+        background-color: #fbd9c5;
+      }
+      .accordion-item:nth-child(7) .number {
+        background-color: #c3e6df;
+      }
+      .accordion-item:nth-child(8) .number {
+        background-color: #d3c6f2;
+      }
+
+      footer {
+        background-color: #f8f9fa;
+        border-top: 2px solid #e9ecef;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+
+      .logo_header {
+        height: 320px;
+      }
+
+      section {
+        margin-bottom: 25px;
+      }
+
+      .btn {
+        background-color: #0944c8;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: #4367d2;
+      }
+      @media (max-width: 768px) {
+        .logo_header {
+          width: 200px; /* Réduit la taille du logo sur les petits écrans */
+          height: auto;
+        }
+      }
+
+      /* Si vous voulez encore plus petit sur des écrans très mobiles (petits smartphones) */
+      @media (max-width: 480px) {
+        .logo_header {
+          width: 130px; /* Réduit encore plus la taille sur les très petits écrans */
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img src="img/logo.png" alt="Logo" class="logo_header" />
+      <a href="index.html">Accueil</a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+      Bienvenue sur ce site pensé pour accompagner les étudiants en formations
+      initiales du médico-social. Son objectif est de vous soutenir dans la
+      découverte et la maîtrise des écrits professionnels, un enjeu central dans
+      les métiers du secteur. Que ce soit pour rédiger des transmissions, des
+      comtptes rendus ou d’autres types de documents professionnels, les écrits
+      demandent une rigueur et une clarté qui peuvent être difficiles à
+      acquérir. Ce site propose des ressources et des outils pour vous aider à
+      progresser, étape par étape. Ce projet a été créé par un éducateur
+      spécialisé également formateur, souhaitant partager des repères et des
+      conseils issus de son expérience professionnelle. Il s’agit d’une première
+      version, encore perfectible et amenée à évoluer. Vos retours et
+      suggestions seront précieux pour l’améliorer et le rendre plus utile à vos
+      besoins. Nous espérons que cet espace vous sera bénéfique dans votre
+      formation et qu’il vous accompagnera au mieux dans le développement de vos
+      compétences professionnelles. Bonne navigation!
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>2024</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
